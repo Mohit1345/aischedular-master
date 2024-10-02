@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+
+
+.dengerdiv{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.supercontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.schedule{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 3vh;
+}
+
+.day{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.cardChapter{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    border-radius: 2vw;
+    padding: 3vw;
+    flex-wrap: wrap;
+    border: 1px solid #A9A9A9;
+    background-color: white;
+    -webkit-filter: drop-shadow(5px 5px 0px #A9A9A9);
+    filter: drop-shadow(5px 5px 0px #A9A9A9);      
+}
+
+.cardChapter:hover{
+    transition-duration: 250ms;
+    background-color: #DFCCFB;
+}
+
+.cardHeading{
+    margin-top: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5vw;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 10vw;    
+}
+
+.cardContent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentHeading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chapterNumber{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25vw;
+    margin-bottom: 1vh;
+}
+
+.chapterName{
+    margin-top: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+}
+
+.studyHours{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15vw;
+}
+
+.importantTopics{
+    all: unset;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15vw;
+    text-justify: newspaper;
+    letter-spacing: 1px;
+    margin-bottom: 3vh;
+}
+
+.importantTopics{
+    width: 100%;
+}
+
+@media only screen and (max-width: 540px) {
+    .dengerdiv{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .supercontainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .schedule{
+        gap: 3vh;
+        justify-content: center;
+        width: 90%;
+    }
+    
+    .day{
+        width: 100%;
+        margin-top: 3vh;
+    }
+    
+    .cardChapter{
+        width: 95%;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+        padding: 3vw;   
+    }
+    
+    .cardChapter:active{
+        background-color: #DFCCFB;
+        border: solid #A9A9A9;
+        border-width: 1px 2px 2px 1px;
+        -webkit-filter: drop-shadow(0px 0px 0px #000);
+        filter: drop-shadow(0px 0px 0px #000);
+        transform: translateY(5px);
+    }
+    
+    .cardHeading{
+        font-size: 7.5vw;
+        margin-left: 10vw;
+    }
+
+    .cardContent{
+        width: 87.5%;
+    }
+       
+    .chapterNumber{
+        font-size: 4vw;
+        margin-bottom: 1vh;
+    }
+    
+    .chapterName{
+        width: 90%;
+        font-size: 5vw;
+    }
+    
+    .studyHours{
+        margin-left: 1vw;
+        font-size: 3.5vw;
+    }
+    
+    .importantTopics{
+        font-size: 3vw;
+        letter-spacing: 1px;
+        margin-bottom: 3vh;
+    }
+    
+    .importantTopics{
+        width: 100%;
+    }    
+}
